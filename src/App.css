@@ -1,0 +1,142 @@
+.container{
+    margin-top: auto;
+    padding: 1.2rem;
+}
+
+.container h1{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color:#1f2937;
+    margin-bottom: 2.5rem;
+}
+.featurs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.select{
+    width: 25%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.select select{
+     width: 90%;
+     border: none;
+     background: #ebe5e5;
+     outline: none;
+     padding:0.5rem 1rem;
+     border-radius: 5px;
+     font-size: 18px;
+}
+
+.search {
+    width: 30%;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    background:#ebe5e5;
+    border-radius: 20px;
+}
+
+.search input{
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 0.73rem 0.75rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search button{
+    border-radius:0 20px 20px 0px ;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.73rem 1.3rem;
+    background-color: #2563eb;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.products .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0px 4px 6px -1px rgb(0 0 0/0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.products .product h3{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #374151;
+}
+
+
+.products .product p{
+    text-align: justify;
+    color: #4b5563;
+}
+
+
+
+.products .product:hover{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1) , 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.loadmore {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.loadmore button {
+    cursor: pointer;
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: color;
+    transition-duration: 200ms;
+}
+
+.loadmore .loading{
+     opacity: 0.5;
+     cursor: not-allowed;
+}
+
+.loadmore button:hover{
+    background: #2563eb;
+}
+
+.load{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
