@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchCategories, setSelectedCategory } from "./redux/categoriesSlice";
 import { fetchProducts, resetProducts } from "./redux/productsSlice";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 const App = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
